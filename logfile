@@ -1,0 +1,22 @@
+LOG:  database system was shut down at 2015-03-07 18:19:39 PST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "BadMuthaFucka" does not exist
+FATAL:  database "BadMuthaFucka" does not exist
+FATAL:  database "BadMuthaFucka" does not exist
+ERROR:  database "sinatra_url_shortener_challenge_master_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE sinatra_url_shortener_challenge_master_development;
+FATAL:  database "BadMuthaFucka" does not exist
+FATAL:  database "sinatra_url_shortener_challenge_master_development" does not exist
+ERROR:  database "sinatra_url_shortener_challenge_master_development" does not exist
+STATEMENT:  DROP DATABASE sinatra_url_shortener_challenge_master_development;
+ERROR:  database "sinatra_url_shortener_challenge_master_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE sinatra_url_shortener_challenge_master_development;
+FATAL:  database "sinatra-url-shortener-challenge-master_development" does not exist
+ERROR:  database "craigslist-jr-challenge-master_development" already exists
+STATEMENT:  CREATE DATABASE "craigslist-jr-challenge-master_development";
+ERROR:  database "sinatra_url_shortener_challenge_master_development" does not exist
+STATEMENT:  DROP DATABASE sinatra_url_shortener_challenge_master_development;
+FATAL:  database "sinatra_url_shortener_challenge_master_development" does not exist

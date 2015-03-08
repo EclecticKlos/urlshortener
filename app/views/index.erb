@@ -1,26 +1,20 @@
-<p><%= @whole_urls %></p>
-
-
 <div class="container">
   <h1>Welcome to Sinatra!</h1>
-  <p>Print this mother fucker <%= @whole_urls %></p>
 
-  <table>
-    <tr>
-      <th>File Description</th>
-      <th>File Location</th>
-    </tr>
-    <tr>
-      <td>This view file</td>
-      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The layout file</td>
-      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The current controller</td>
-      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-  </table>
+    <ul class="whole", style="list-style=type:none">
+      <% @all_urls.each do |url| %>
+      <li><%= url.full_url %></li>
+      <% end %>
+    </ul>
+    <ul class="short", style="list-style-type:none">
+      <% @all_urls.each do |url| %>
+      <li><a href="<%= url.full_url %>"><%= url.short_url %></a></li>
+      <% end %>
+    </ul>
 </div>
+
+<form action="/" method="POST">
+  URL to shorten:<br>
+  <input type="text" name="link">
+  <input type="submit" name="Shorten it!">
+</form>

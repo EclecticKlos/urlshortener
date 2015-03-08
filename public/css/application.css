@@ -1,9 +1,23 @@
 .container {
-  margin: 20px auto;
-  width: 600px;
+  margin: 0px auto;
+  width: 750px;
   padding: 0px 20px 20px 20px;
   border: 1px dotted black;
 }
+
 th {
   text-align: left;
+}
+
+ul.whole {
+  float: left;
+  width: 500px;
+  text-align: left;
+  /*-webkit-column-count:1;*/
+}
+
+ul.short {
+  float:  right;
+  widght: 250px;
+  text-align: right;
 }

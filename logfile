@@ -20,3 +20,6 @@ STATEMENT:  CREATE DATABASE "craigslist-jr-challenge-master_development";
 ERROR:  database "sinatra_url_shortener_challenge_master_development" does not exist
 STATEMENT:  DROP DATABASE sinatra_url_shortener_challenge_master_development;
 FATAL:  database "sinatra_url_shortener_challenge_master_development" does not exist
+ERROR:  database "sinatra_url_shortener_challenge_master_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE sinatra_url_shortener_challenge_master_development;
